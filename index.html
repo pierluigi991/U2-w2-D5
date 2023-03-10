@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Netflix_icon.svg/611px-Netflix_icon.svg.png?20220806170125">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Netflix</title>
+</head>
+<body class="bg-dark">
+    <header class="conteiner-fluid">
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img class="logo" src="./Netflix-assets/assets/netflix_logo.png" alt="" width="100px" height="50px"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item ">
+                    <a class="nav-link active text-white fw-bold" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white fw-bold" href="#">Tv Shows</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white fw-bold" href="#">Movies</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white fw-bold" href="#">Recently Added</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white fw-bold" href="#">My List</a>
+                  </li>
+                </ul>
+                <div class="d-flex navbar-nav mt-1 px-5 mx-5">
+                  <a class="nav-link text-white" href="#"><i class="bi bi-search"></i></a>
+                  <a class="nav-link text-white" href="#">KIDS</a>
+                  <a class="nav-link text-white" href="#"><i class="bi bi-bell-fill"></i></a>
+                  <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img class="avatar" src="./Netflix-assets/assets/avatar.png" width="20px" height="20px">
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li> <a class="dropdown-item" href="profile.html">Profile</a></li>
+                    <li> <hr class="dropdown-divider"></li>
+                    <li> <a class="dropdown-item" href="#">Setting</a></li>
+                  </ul>
+                </li>
+                </div>
+              </div>
+            </div>
+          </nav>
+        <div class="container-fluid bg-dark d-flex align-items-baseline justify-content-between">
+          <div class="d-flex">
+            <h1 class="text-white fw-bold">TV Shows</h1>
+          <div class="btn-group align-items-baseline ms-5 mt-2">
+            <button type="button" class="rounded-0 btn btn-secondary border-end-0 bg-black fw-bold">Genres</button>
+            <button type="button" class="rounded-0 btn btn-secondary border-start-0 dropdown-toggle dropdown-toggle-split bg-black" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
+              <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+          </div>
+          <div class="">
+            <a class="border px-1" href=""><i class="bi bi-list"></i></a>
+            <a class="border px-1" href=""><i class="bi bi-three-dots"></i></a>
+          </div>
+          </div>
+    </header>
+    <main>
+        <div class="container-fluid mt-5">
+            <p class="text-white fs-4 fw-bold">Trending Now</p>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="d-flex">
+                    <img src="Netflix-assets/assets/media/media0.webp" class="d-block imgSize">
+                    <img src="Netflix-assets/assets/media/media1.jpg" class="d-block imgSize">
+                    <img src="Netflix-assets/assets/media/media2.webp" class="d-block imgSize">
+                    <img src="Netflix-assets/assets/media/media3.webp" class="d-block imgSize">
+                    <img src="Netflix-assets/assets/media/media4.jpg" class="d-block imgSize">
+                    <img src="Netflix-assets/assets/media/media5.webp" class="d-block imgSize">
+                    <img src="Netflix-assets/assets/media/media6.jpg" class="d-block imgSize">
+      
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex">
+                    <img src="Netflix-assets/assets/media/media7.webp" class="d-block imgSize">
+                    <img src="Netflix-assets/assets/media/media8.webp" class="d-block imgSize">
+                    <img src="Netflix-assets/assets/media/media9.jpg" class="d-block imgSize">
+                    <img src="Netflix-assets/assets/media/media10.jpg" class="d-block imgSize">
+                    <img src="Netflix-assets/assets/media/media11.jpg" class="d-block imgSize">
+                    <img src="Netflix-assets/assets/media/media12.jpg" class="d-block imgSize">
+                    <img src="Netflix-assets/assets/media/media14.webp" class="d-block imgSize">
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+      
+      
+          <div class="container-fluid mt-5">
+            <p class="text-white fs-4 fw-bold">Watch It Again</p>
+            <div id="carouselExampleControl" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="d-flex">
+                    <img src="Netflix-assets/assets/media/media15.jpg" class="d-block imgSize">
+                    <img src="Netflix-assets/assets/media/media16.webp" class="d-block imgSize">
+                    <img src="Netflix-assets/assets/media/media17.jpg" class="d-block imgSize">
+                    <img src="Netflix-assets/assets/media/media18.jpg" class="d-block imgSize">
+                    <img src="Netflix-assets/assets/media/media19.webp" class="d-block imgSize">
+                    <img src="Netflix-assets/assets/media/media20.jpg" class="d-block imgSize">
+                    <img src="Netflix-assets/assets/media/media21.webp" class="d-block imgSize">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex">
+                    <img src="Netflix-assets/assets/media/media22.webp" class="d-block imgSize">
+                    <img src="Netflix-assets/assets/media/media23.webp" class="d-block imgSize">
+                    <img src="Netflix-assets/assets/media/media24.jpg" class="d-block imgSize">
+                    <img src="Netflix-assets/assets/media/media25.webp" class="d-block imgSize">
+                    <img src="Netflix-assets/assets/media/media26.webp" class="d-block imgSize">
+                    <img src="Netflix-assets/assets/media/media27.jpg" class="d-block imgSize">
+                    <img src="Netflix-assets/assets/media/media28.jpg" class="d-block imgSize">
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControl" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+      
+          <div class="container-fluid mt-5">
+            <p class="text-white fs-4 fw-bold">New Releases</p>
+            <div id="carouselExampleContro" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="d-flex">
+                    <img src="Netflix-assets/assets/media/media21.webp" class="d-block imgSize">
+                    <img src="Netflix-assets/assets/media/media22.webp" class="d-block imgSize">
+                    <img src="Netflix-assets/assets/media/media23.webp" class="d-block imgSize">
+                    <img src="Netflix-assets/assets/media/media24.jpg" class="d-block imgSize">
+                    <img src="Netflix-assets/assets/media/media25.webp" class="d-block imgSize">
+                    <img src="Netflix-assets/assets/media/media31.webp" class="d-block imgSize">
+                    <img src="Netflix-assets/assets/media/media10.jpg" class="d-block imgSize">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex">
+                    <img src="Netflix-assets/assets/media/media26.webp" class="d-block imgSize">
+                    <img src="Netflix-assets/assets/media/media27.jpg" class="d-block imgSize">
+                    <img src="Netflix-assets/assets/media/media28.jpg" class="d-block imgSize">
+                    <img src="Netflix-assets/assets/media/media29.jpg" class="d-block imgSize">
+                    <img src="Netflix-assets/assets/media/media30.jpg" class="d-block imgSize">
+                    <img src="Netflix-assets/assets/media/media1.jpg" class="d-block imgSize">
+                    <img src="Netflix-assets/assets/media/media2.webp" class="d-block imgSize">
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleContro" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+    </main>
+    <footer>
+        <footer class="container">
+            <div class=" ms-2rem mb-2">
+              <i class="bi bi-facebook fs-4 me-3 text-white-50"></i>
+              <i class="bi bi-instagram fs-4 me-3 text-white-50"></i>
+              <i class="bi bi-twitter fs-4 me-3 text-white-50"></i>
+              <i class="bi bi-youtube fs-4 me-3 text-white-50"></i>
+            </div>
+            <div class="row">
+              <div class="col-3">
+                <ul>
+                  <li class="lh-lg"><a class="text-white-50" href="#">Audio and Subtitles</a></li>
+                  <li class="lh-lg"><a class="text-white-50" href="#">Media Center</a></li>
+                  <li class="lh-lg"><a class="text-white-50" href="#">Privacy</a></li>
+                  <li class="lh-lg"><a class="text-white-50" href="#">Contact us</a></li>
+                  <li class="lh-lg">
+                    <button type="button" class="btn btn-outline-secondary btn-sm mt-4 rounded-0">Service Code</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-3">
+                <ul>
+                    <li><a class="text-white-50 lh-lg" href="#">Audio Description</a></li>
+                    <li><a class="text-white-50 lh-lg" href="#">Investor relations</a></li>
+                    <li><a class="text-white-50 lh-lg" href="#">Legal notices</a></li>
+                </ul>
+              </div>
+              <div class="col-3">
+                <ul>
+                  <li><a class="text-white-50 lh-lg" href="#">Help Center</a></li>
+                  <li><a class="text-white-50 lh-lg" href="#">Jobs</a></li>
+                  <li><a class="text-white-50 lh-lg" href="#">Cookie Preferences</a></li>
+                </ul>
+              </div>
+              <div class="col-3">
+                <ul>
+                  <li><a class="text-white-50 lh-lg" href="#">Gift Cards</a></li>
+                  <li><a class="text-white-50 lh-lg" href="#">Term of Use</a></li>
+                  <li><a class="text-white-50 lh-lg" href="#">Corporate Information</a></li>
+                </ul>
+              </div>
+            </div>
+            <p class="text-white-50 small ps-2rem">&copy; 1997-2019 Netflix, inc. (i.OdOOfcda2fdt9cOde)</p>
+          </footer>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
