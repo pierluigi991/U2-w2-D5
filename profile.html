@@ -11,94 +11,62 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
-<body>
-    <header class="bg-dark">
-        <div class="">
-            <a class="navbar-brand" href="#"><img class="logo" src="./Netflix-assets/assets/netflix_logo.png" alt="" width="100px" height="50px"></a>
-        </div>
-    </header>
-    
-    <main class="container-fluid bg-dark text-white d-flex align-items-center ">
-        
-        
-        <div class="row">
-            <div class="col-8">
-                <h1 class="text-center fw-semibold mb-2">Edit Profile</h1>
-                <hr>
-                <div class="row">
-                    <div class="col-3">
-                        <img class="img-fluid" src="./Netflix-assets/assets/kids_icon.png" alt="" width="150px" height="150px"> 
+<body class="bg-dark">
+    <div class="navbar">
+        <a class="navbar-brand" href="#"><img class="logo" src="./Netflix-assets/assets/netflix_logo.png" alt="" width="100px" height="50px"></a>
+    </div>
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            <div class="row">
+                <div class="col-10">
+                    <p class="fs-0 border-bottom border-secondary">Edit Profile</p>
+                </div>
+                <div class="col-3 pe-0">
+                    <div class="position-relative">
+                        <img src="Netflix-assets/assets/avatar.png" width="100px" height="100px">
+                        <i class="bi bi-pencil-fill bg-black border rounded-circle p-1 fs-8 ps bottom-0 start-0"></i>
                     </div>
-                    <div class="col-8">
-                        <div class="input-group mb-3">
-                            <span class="input-group-text" id="basic-addon1"></span>
-                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" value="Strive Student">
-                          </div>
-                        <div>
-                            <h4>Language</h4>
-                            <!-- <div>
-                                <label for="language">Language:</label>
-                                <div>
-                                    <select id="language" name="languages" form="lang">
-                                    <option value="en">English</option>
-                                    <option value="ita">Italian</option>
-                                    <option value="fr">French</option>
-                                    </select>
-                                </div>
-                            </div> -->
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  english
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">italiano</a></li>
-                                  <li><a class="dropdown-item" href="#">giapponese</a></li>
-                                  <li><a class="dropdown-item" href="#">sardo</a></li>
-                                  <li><a class="dropdown-item" href="#">salentino</a></li>
-                                  <li><a class="dropdown-item" href="#">siciliano</a></li>
-                                  <li><a class="dropdown-item" href="#">veneto</a></li>
-
-                                </ul>
-                              </div>
-                              <hr>
-                              <h4>Maturity Setting</h4>
-                              <button type="button" class="btn btn-secondary py-1 my-2 fs-6">ALL MATURITY RATINGS</button>
-                              <p>Show title of <strong>all maturity ratings</strong> for this profile</p>
-                              <button type="button" class="rounded-0 btn btn-secondary border-end-0 my-3">EDIT</button>
-
-                              <hr>
-
-                              <div>
-                                <p>Autoplay controls</p>
-                                <form action="/action_page.php">
-                                    <input type="checkbox">
-                                    <label> Autoplay next episode in a series on all devices.</label><br>
-                                    <input type="checkbox">
-                                    <label> Autoplay previews while browsing on all devices</label><br>
-                                </form>
+                </div>
+                <div class="col-7 ps-0 ">
+                    <p class="mt-1 bg-secondary text-white px-2 py-1">Strive Student</p>
+                    <label for="language">Language:</label>
+                    <div>
+                        <select class="bg-black text-white mt-2  pb-1" id="language" name="languages" form="lang">
+                        <option value="en">English</option>
+                        <option value="ita">Italian</option>
+                        <option value="fr">French</option>
+                        </select>
+                    </div>
+                    <p class="border-top mt-4 pt-3  text-white fs-5">Maturity Settings:</p>
+                    <button class="bg-secondary text-white px-2 fw-bold text-uppercase">All maturity ratings</button>
+                    <p class="mt-2">Show titles of <span class="fw-bold ">all maturity ratings</span> for this profile</p>
+                    <button class="bg-transparent border border-secondary text-secondary px-4 py-1 mt-1">EDIT</button>
+                        <p class="border-top mt-4 pt-3 mb-0 border-secondary text-white-50 fs-5">Autoplay controls</p>
+                        <form>
+                            <div class="d-flex align-items-center gap-2">
+                                <input class="check form-check-input border border-secondary  rounded-0 fs-3" type="checkbox">
+                                <label> Autoplay next episode in a series on all devices.</label><br>
                             </div>
-                           
-                           
-                            
-                        </div>
-                        
+                            <div class="d-flex align-items-center gap-2">
+                                <input class="check form-check-input border border-secondary rounded-0 fs-3" type="checkbox">
+                                <label> Autoplay previews while browsing on all devices.</label><br>
+                            </div>
+                        </form>
                     </div>
-                    
-                    <hr class="my-3">
-                        <div class="conteiner m">
-                            
-                            <button type="button" class="btn btn-outline-secondary btn-lg rounded-0 my-3 mb-4 me-2 ">Save</button>
-                            <button type="button" class="btn btn-outline-secondary btn-lg rounded-0 my-3 mb-4 me-2">Cancel</button>
-                            <button type="button" class="btn btn-outline-secondary btn-lg rounded-0 my-3 mb-4 me-2">Delate Profile</button>
-                        </div>
-                        
-                        
                 </div>
             </div>
-            <!-- da sistemare al centro l'edit e accorgimenti sui bottoni -->
-        </div>
-
-    </main>
+            <div class="d-flex justify-content-start offset-3 ">
+                <div class="row">
+                    <div class="my-4 border-top border-secondary pt-4 px-0 col-12 ">
+                        <button class="px-5 col rounded-0  border border-secondary text-secondary fw-bold btn">SAVE</button>
+                        <button class="px-5 col rounded-0  border border-secondary text-secondary fw-bold btn mx-3">CANCEL</button>
+                        <button class="px-5 col rounded-0  border border-secondary text-secondary fw-bold btn me-2">DELETE PROFILE</button>
+                    </div>
+                </div>
+            </div>
+        </div>s
+    
+   
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
